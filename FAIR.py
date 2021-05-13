@@ -241,7 +241,7 @@ def evidence_graph(pid,token = TOKEN):
     if not isinstance(pid,str):
         raise Exception('PID must be string.')
 
-    eg_request = requests.get(FAIR_URL + 'eg/' + pid,
+    eg_request = requests.get(FAIR_URL + 'evidencegraph/' + pid,
                         headers = {"Authorization": token})
 
     return eg_request.json()
