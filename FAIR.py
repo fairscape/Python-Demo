@@ -1,7 +1,7 @@
 import requests, json, os
 import hashlib
 
-FAIR_URL = 'http://clarklab.uvarc.io/'
+FAIR_URL = 'https://clarklab.uvarc.io/'
 TOKEN = ''
 def upload_file(file_path,metadata,hash = '',token = TOKEN):
     """
